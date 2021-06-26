@@ -22,7 +22,7 @@ pipeline {
             steps {
                 sh 'cp target/*.jar /var/jenkins_home'
                 sh 'java -jar /var/jenkins_home/my-app-1.0-SNAPSHOT.jar > /var/jenkins_home/2.txt'
-                sh 'cat /root/2.txt'
+                sh 'cat /var/jenkins_home/2.txt'
 
             }
         }
